@@ -1,0 +1,15 @@
+<student> #this is object of student
+    <firstname>John</firstname>
+    <lastname>Doe</lastname>
+    <dob>1990-01-01</dob>
+    <mobile>9652676335</mobile>
+    <address>
+       <permanent>
+        <street>123 Main St</street>
+        <city>New York</city>
+        <state>NY</state>
+        <zip>10001</zip>
+      </permanent>
+    </address>
+
+</student>

@@ -1,0 +1,4 @@
+- name: ping the server
+  hosts:            # what we are targeting server # it is nothing but inventory file
+  tasks:                 # task is nothing but task=module=collection
+    

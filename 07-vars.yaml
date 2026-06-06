@@ -11,6 +11,6 @@
      private: true   # by default it will not display password, now by using private=true it will not display password 
 
   tasks:
-      - name: printr information
-  debug:
-           msg: " Username is: {{ username}}, password is: {{ password}}"
+      - name: print information
+        debug:
+          msg: " Username is: {{ username}}, password is: {{ password}}"

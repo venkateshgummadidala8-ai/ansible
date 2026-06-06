@@ -11,5 +11,4 @@
      private: false
   tasks:
      full_name: " siva from task level "
-  debug:
-        msg: " hi, full name is  {{ full_name}}"
+  

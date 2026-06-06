@@ -9,7 +9,7 @@
        - linux
        - shell
        - ansible
-    more details:
+    more_details:
         months: "5"
         trainer: "sivakumar"
     tasks:

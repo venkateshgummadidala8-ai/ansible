@@ -15,7 +15,8 @@
     tasks:
      - name: print information
        debug:
-         msg: name {{ course}}
+         msg: |
+              name {{ course}}
               duration {{ duration}}
               is_live_session {{ is_live_session}}
               topics {{ topics}}

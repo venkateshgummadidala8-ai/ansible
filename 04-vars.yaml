@@ -1,0 +1,16 @@
+ - name: demo on variables
+   hosts: localhost # local host is where ansible is running
+   connection: local # it will not ask for username and password
+   become: true
+   vars:
+      course: "ansible"
+      trainer: "siva kumar"
+      duration: "150 hours"
+            
+
+   tasks:
+      - name: print the variable
+        debug:
+          msg: "Hi, I am learning {{ course }}, trainer is {{trainer}}, duration is {{duration}}"
+          
+          

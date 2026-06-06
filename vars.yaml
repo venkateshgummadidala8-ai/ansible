@@ -1,0 +1,22 @@
+- name: demo on variables
+  hosts: localhost  # we are targeting localhost
+  connection: local # connection is nothing but how we are connecting to the server
+  vars:
+    course: "Ansible"
+    trainer: "Siva Kumar"
+    duration: "150hours"
+    tasks:
+      -debug:
+          msg: |
+            "Hi, I am learning {{course}} course from {{trainer}} duration is {{duration}}"
+  become: true   # run with sudo
+  tasks:
+    - name: Ensure nginx is installed
+      ansible.builtin.yum:
+        name: nginx
+        state: present
+
+    - name: Start nginx service
+      ansible.builtin.service:
+        name: nginx
+        state: started

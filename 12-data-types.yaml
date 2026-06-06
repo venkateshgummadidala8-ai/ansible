@@ -12,7 +12,7 @@
     more_details:
         months: "5"
         trainer: "sivakumar"
-    tasks:
+  tasks:
      - name: print information
        debug:
          msg: |

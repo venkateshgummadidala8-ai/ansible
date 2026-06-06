@@ -1,6 +1,6 @@
 - name: inventory variables
   hosts: localhost
-  conection: local
+  connection: localhost
   tasks:
     - name: print information
       debug:

@@ -12,5 +12,5 @@
 
   tasks:
       - name: printr information
-        debug:
-          msg: " Username is: {{ username}}, password is: {{ password}}"
+  debug:
+           msg: " Username is: {{ username}}, password is: {{ password}}"

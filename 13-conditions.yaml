@@ -1,0 +1,8 @@
+- name: checking when condition
+  hosts: localhost
+  connection: localhost
+  vars:
+   number_is: 9
+   debug:
+     msg: " give number {{ number_is}}"
+  when: Number_is > 5

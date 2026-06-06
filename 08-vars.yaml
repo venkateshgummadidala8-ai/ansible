@@ -2,7 +2,7 @@
   hosts: frontend
     #connection: localhost
   vars_files:
-      - course.yaml
+      - frontend.yaml
   tasks:
     - name: print information
       debug:

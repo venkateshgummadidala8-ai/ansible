@@ -1,4 +1,4 @@
-- name: demo on  task level variables
+- name: demo on  task level variables  # only task level will have priority over play level variables
   hosts: localhost # local host is where ansible is running
   connection: local # it will not ask for username and password
   vars:

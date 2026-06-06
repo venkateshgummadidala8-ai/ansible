@@ -1,8 +1,6 @@
 - name: inventory variables
   hosts: frontend
     #connection: localhost
-  vars_files:
-      - frontend.yaml
   tasks:
     - name: print information
       debug:

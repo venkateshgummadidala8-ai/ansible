@@ -11,4 +11,13 @@
      private: false
   tasks:
      full_name: " siva from task level "
-  
+  debug:
+    msg: " Hi {{ full_name}}"
+
+
+    # 1. CMD args
+    #2. vars
+    #3. vars_files
+    #4. vars_prompt
+    #5. play level
+    #6.inventory level

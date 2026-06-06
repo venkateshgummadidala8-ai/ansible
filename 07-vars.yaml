@@ -8,7 +8,7 @@
 
    - name: password
      prompt: "please enter password"
-     private: false 
+     private: true   # by default it will not display password, now by using private=true it will not display password 
 
   tasks:
       - name: printr information

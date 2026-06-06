@@ -1,6 +1,7 @@
 - name: demo on loops
   hosts: localhost
   connections: localhost
+  become: yes
   tasks:
     - name: print names
       debug:

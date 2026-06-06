@@ -1,6 +1,8 @@
 - name: inventory variables
   hosts: localhost
   connection: localhost
+  vars_files:
+      - course.yaml
   tasks:
     - name: print information
       debug:

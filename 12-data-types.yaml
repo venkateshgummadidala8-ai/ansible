@@ -1,25 +1,21 @@
-- name : course information
-  hosts: localhost # we are targeting localhost
-  connection: local # connection is nothing but how we are connecting to the server
+- name: course information
+  hosts: localhost
+  connection: localhost
   vars:
-    course: "Devops with AIOps" #string
-    duration_in_hours: 40 #intiger/number
-    is_live_sessions: true #boolean
-    topics: #list
-      - Linux
-      - shell
-      - ansible
-       more_details: #map/dictionary -it contains key value pairs
+    course: "devsecops with ai ops"  # string
+    duration: 150  # integer / number
+    is_live_session: true # boolean
+    topics: 
+       - linux
+       - shell
+       - ansible
+    more details:
         months: "5"
-        trainer: "siva kumar"
-      tasks:
-        -name: print information
-        msg: |
-          name: {{course}}
-          duration_in_hours: {{duration_in_hours}}
-          is_live-sessions: {{is_live_sessions}}
-          topics: {{topics}}
-          more_details: {{more_details}}
-          
-
-        
+        trainer: "sivakumar"
+    tasks:
+     - name: print information
+       debug:
+         msg: name {{ course}}
+              duration {{ duration}}
+              is_live_session {{ is_live_session}}
+              topics {{ topics}}

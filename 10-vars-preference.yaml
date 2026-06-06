@@ -12,4 +12,4 @@
   tasks:
      full_name: " siva from task level "
   debug:
-     msg: " hi, {{ full_name}}"
+       msg: " hi, full name is  {{ full_name}}"

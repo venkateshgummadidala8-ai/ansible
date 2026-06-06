@@ -1,0 +1,7 @@
+- name: demo vars from command line 
+  hosts: localhost
+  connection: localhost
+  tasks:
+    - name: print name
+      debug:
+        msg: " Hello {{ name }} "

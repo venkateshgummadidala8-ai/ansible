@@ -1,6 +1,7 @@
 - name: inventory variables
-  hosts: localhost
-  connection: localhost
+  hosts: frontend
+  become: yes
+  #connection: localhost
   vars_files:
       - course.yaml
   tasks:

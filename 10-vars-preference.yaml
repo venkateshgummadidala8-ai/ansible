@@ -6,7 +6,7 @@
   vars_files:
          - course.yaml
   vars_promt:
-   - name: full_name
+   - name: "full_name"
      prompt: "please enter your full_name"
      private: false
   tasks:

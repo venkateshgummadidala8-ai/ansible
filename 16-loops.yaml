@@ -1,0 +1,11 @@
+- name: demo on loops
+  hosts: localhost
+  connections: localhost
+  tasks:
+    - name: print names
+      debug:
+        msg: " Hi, {{item}}" # item is called reserved spl variable
+      loop:
+       - ramesh
+       - mahesh
+       - ravi

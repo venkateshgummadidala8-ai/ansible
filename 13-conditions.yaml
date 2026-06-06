@@ -6,5 +6,5 @@
   tasks:
     when: Number_is > 5
     debug:
-      msg: " give number {{ number_is}}"
+      msg: " give number {{ }}"
      

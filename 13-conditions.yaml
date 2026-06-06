@@ -3,6 +3,8 @@
   connection: localhost
   vars:
    number_is: 9
-   debug:
-     msg: " give number {{ number_is}}"
-  when: Number_is > 5
+  tasks:
+    when: Number_is > 5
+    debug:
+      msg: " give number {{ number_is}}"
+     

@@ -1,5 +1,5 @@
 - name: demo on promt
-  hosts: local
+  hosts: localhost
   connection: local
   vars_prompt:
    - name: username

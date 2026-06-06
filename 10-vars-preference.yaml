@@ -1,0 +1,14 @@
+- name: demo on preference vars
+  hosts: frontend
+  vars:
+     full_name: " siva from paly "
+  vars_files:
+      - course.yaml
+  vars_promt:
+     - name: full name
+       promt: "Please enter your full name"
+       private: false
+  tasks:
+     full_name: " siva from task level "
+  debug:
+     msg: " hi, {{ full_name}}"

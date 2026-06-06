@@ -5,8 +5,8 @@
   vars_files:
       - course.yaml
   vars_promt:
-     - name: full name
-       promt: "Please enter your full name"
+     - name: full_name
+       promt: "Please enter your full_name"
        private: false
   tasks:
      full_name: " siva from task level "

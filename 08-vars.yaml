@@ -1,8 +1,7 @@
 - name: inventory variables
-  hosts: localhost 
-  connection: local
+  hosts: localhost
+  conection: local
   tasks:
-   - name: print information
-     debug:
-       msg: " Hi, I am learning {{ course }}, trainer is {{ trainer}}, duration is {{ duration }}"
-       
+    - name: print information
+      debug:
+        msg: " Hi, I am learning {{ course }}, trainer is {{ trainer}}, duration is {{ duration }}"

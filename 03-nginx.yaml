@@ -1,14 +1,17 @@
 - name: install and start nginx
   hosts: frontend
   become: yes
+
+
   tasks:
     - name: install nginx
       ansible.builtin.package:
         name: nginx
-        state: present
+        state: installed # this will ensure that nginx is installed, if it is already installed it will do nothing
+
 
     - name: start nginx
-      ansible.buitin.service:
+      ansible.builtin.service:
        name: nginx
        state: started
        enabled: yes # this will ensure that nginx starts on boot    

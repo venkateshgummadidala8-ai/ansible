@@ -1,6 +1,6 @@
 - name: demo on preference vars
-  hosts: localhost
-  connection: localhost
+  hosts: frontend
+  
   vars:
      full_name: " siva from play level "
   vars_files:

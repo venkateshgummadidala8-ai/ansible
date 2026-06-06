@@ -5,9 +5,9 @@
      full_name: " siva from play level "
   vars_files:
          - course.yaml
-  vars_promt:
-   - name: "full_name"
-     prompt: "please enter your full_name"
+  vars_prompt:
+   - name: full_nmae
+     prompt: "please enter full_name"
      private: false
   tasks:
      full_name: " siva from task level "

@@ -1,12 +1,10 @@
 - name: demo on loops
-  hosts: localhost
-  connections: localhost
-  become: yes
+  hosts: all
   tasks:
-    - name: print names
-      debug:
-        msg: " Hi, {{item}}" # item is called reserved spl variable
+    - name: Print items in a loop
+      ansible.builtin.debug:
+        msg: "{{ item }}"
       loop:
-       - ramesh
-       - mahesh
-       - ravi
+        - one
+        - two
+        - three

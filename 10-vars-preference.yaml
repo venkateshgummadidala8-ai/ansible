@@ -1,7 +1,7 @@
 - name: demo on preference vars
   hosts: frontend
   vars:
-     full_name: " siva from paly "
+     full_name: " siva from play level "
   vars_files:
       - course.yaml
   vars_promt:

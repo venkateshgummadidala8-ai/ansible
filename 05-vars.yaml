@@ -1,0 +1,14 @@
+- name: demo on  task level variables
+  hosts: localhost # local host is where ansible is running
+  connection: local # it will not ask for username and password
+  become: true
+  vars:
+      course: "ansible"
+      trainer: "siva kumar"
+      duration: "150 hours"
+  tasks:
+      - name: print infirmation 
+  vars:
+          course: "devsecops with AI Ops"
+          debug:
+          msg: "Course: {{ course }}, Trainer: {{ trainer }}, Duration: {{ duration }}"

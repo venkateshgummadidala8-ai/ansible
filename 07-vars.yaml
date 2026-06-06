@@ -3,14 +3,14 @@
   connection: local
   vars_prompt:
    - name: username
-     prompt: please enter username
+     prompt: "please enter username"
      private: false   # by default it will not display username, now by using private=false it will display username
 
    - name: password
-     prompt: please enter password
+     prompt: "please enter password"
      private: true 
 
-     tasks:
+  tasks:
       - name: printr information
         debug:
-          msg: " username is: {{ username}}, password is: {{ password}}"
+          msg: " Username is: {{ username}}, password is: {{ password}}"

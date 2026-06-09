@@ -1,0 +1,21 @@
+- name: roboshop instance management
+  hosts: local
+  connection: local # aws configure for user authentication
+  vars:
+    instances: [ "mongodb" , " redis" , "mysql" , "rabbitmq"]
+  tasks:
+    - name: create ec2 instances
+      amazon.aws.ec2_instance:
+        instance type: t2.micro
+        name: "roboshop-{{ item}}"
+        security_groups: 
+          - "roboshsop-{{item}}"
+          - "roboshop-common"
+        image_id: ami-0220d79f3f480ecf5
+        loop: " {{ instances}}"
+        register: ec2_output
+
+- name: print output
+  debug:
+    msg: "{{ ec2-output}}"
+    

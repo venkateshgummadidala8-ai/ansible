@@ -1,0 +1,8 @@
+- name: idempotency
+  hosts: localhost
+  become: yes
+  connection: localhost
+  tasks:
+    - name: create expense user
+      user: 
+       name: expense

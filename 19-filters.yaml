@@ -13,4 +13,4 @@
        msg: "{{ topics | split (',')}}"
    - name: convert map to list
      debug:
-       msg: "{{tagmap | dic2items }}"
+       msg: "{{tagmap | dict2items }}"

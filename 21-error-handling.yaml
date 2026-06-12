@@ -1,7 +1,7 @@
 - name: demo on error handling
   hosts: localhost
   connection: localhost
-  tesks:
+  tasks:
    - name : check roboshop user exist or not
      command: id roboshop
      register: users_output

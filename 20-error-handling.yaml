@@ -1,6 +1,0 @@
-- name: demo on error handling
-  hosts: localhost
-  connection: localhost
-  tasks:
-    - name: error handling
-    

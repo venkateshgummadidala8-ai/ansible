@@ -1,0 +1,8 @@
+- name: demo on shell vs command
+  hosts: localhost
+  connection: localhost
+  tasks:
+    - name: command test
+      shell: cat /etc/passwd | grep root
+
+

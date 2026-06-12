@@ -8,7 +8,7 @@
 
     - name: print output
        debug:
-         msg:"{{user_output}}"
+         msg: "{{user_output}}"
 
 
 

@@ -6,5 +6,4 @@
   tasks:
    - name: convert string to list
      debug:
-       msg: "{{ topics | split ','}}"
-       
+       msg: "{{ topics | split (',')}}"

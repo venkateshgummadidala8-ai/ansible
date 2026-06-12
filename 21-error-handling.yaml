@@ -4,3 +4,9 @@
   tesks:
    - name : check roboshop user exist or not
      command: id roboshop
+     register: users_output
+     ignore_errors: true
+
+   - name: print user output
+     debug:
+       msg: "{{ users_output }}"

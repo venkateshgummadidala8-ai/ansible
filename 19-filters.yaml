@@ -2,8 +2,15 @@
   hosts: localhost
   connection: localhost
   vars:
-    topics: linux, shell, ansible, terraform
+    topics: linux, shell, ansible, terraform 
+    tagmap:
+     name: Ansible
+     project: roboshop
+     environment: dev
   tasks:
    - name: convert string to list
      debug:
        msg: "{{ topics | split (',')}}"
+   - name: convert map to list
+     debug:
+       msg: "{{tagmap | dic2items }}"

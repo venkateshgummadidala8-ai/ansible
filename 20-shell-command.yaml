@@ -2,13 +2,11 @@
   hosts: localhost
   connection: localhost
   tasks:
-  - name: command test
+   - name: command test
   # command : cat/etc/passwd | grep root
-    shell: cat /etc/passwd | grep root
-    register: user_output
-
-  - name: 
-      debug:
+     shell: cat /etc/passwd | grep root
+     register: user_output
+         debug:
          msg: "{{ user_output }}"
 
 

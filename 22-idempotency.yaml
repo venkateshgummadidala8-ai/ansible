@@ -1,8 +1,6 @@
-- name: idempotency
+- name: create user # number of time you run the script , you get the same result
   hosts: localhost
-  become: yes
   connection: localhost
+  become: yes
   tasks:
-    - name: create expense user
-      user: 
-       name: expense
+    - name: expense

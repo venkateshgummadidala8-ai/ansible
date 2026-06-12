@@ -7,6 +7,8 @@
      shell: cat /etc/passwd | grep root
      register: users_output
 
-   
+   - name: list files
+     debug:
+       msg: "{{ users_output }}"
 
 

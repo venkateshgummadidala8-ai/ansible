@@ -3,7 +3,7 @@
   connection: localhost
   tasks:
     - name: command test
-      shell: cat /etc/passwd | grep root
+      command: cat /etc/passwd | grep root
 
 
 

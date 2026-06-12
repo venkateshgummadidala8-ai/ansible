@@ -3,4 +3,6 @@
   connection: localhost
   become: yes
   tasks:
-    - name: expense
+    - name: create expense user
+      user: 
+        name: expense
